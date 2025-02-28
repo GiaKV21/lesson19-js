@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#characters-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1420px;
+  background-color: darkblue;
+  border-radius: 10px;
+}
+
+.character-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 700px;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.character-card .content {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.character-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.actor-info {
+  font-size: 14px;
+  color: #333;
+}
